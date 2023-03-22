@@ -1,0 +1,24 @@
+nav.menu-primary {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+.logo-box {
+  font-size: var(--txt-md);
+}
+
+ul.nav-menu {
+  
+}
+
+.menu-wrap {
+  width: 100%;
+
+}
+
+.menu-item {
+
+}

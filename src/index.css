@@ -1,0 +1,67 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: light dark;
+  
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --font: "Poppins", sans-serif;
+  --primary-color: #2D9CDB;
+  --color-red: #EB5757;
+  --color-green: #27AE60;
+  --grey-1: #333;
+  --grey-2: #4F4F4F;
+  --grey-3: #828282;
+  --grey-button: #E0E0E0;
+
+  --txt-lg: 3rem; /* 48px */
+  --txt-md: 2.25rem; /* 36px */
+  --txt-sm: 1.5rem; /* 24px */
+  --txt-xs: 1.125rem; /* 18px */
+  --txt-xxs: 1rem;
+  --txt-xxxs: 0.875rem; /* 14px */
+  --txt-xs-mobile: 0.75rem; /* 12px */
+  --txt-xss-mobile: 0.625rem; /* 10px */
+
+  --space-lg: 4.5rem; /* 72px */
+  --space-lg2: 3.375rem; /* 54px */
+  --space-lg-mobile: 2.25rem; /* 36px */
+  --space-md: 1.688rem; /*27px */
+  --space-sm: 1.5rem; /* 24px */
+  --space-xs: 1.125rem; /* 18px */
+
+  --rounded-xs: 12px;
+  --rounded-sm: 16px;
+  --rounded-md: 18px;
+  --rounded-lg: 24px;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
