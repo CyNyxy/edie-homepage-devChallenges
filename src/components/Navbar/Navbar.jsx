@@ -1,22 +1,31 @@
 import '../Navbar/navbar.css'
 
+const Menu = () => {
+
+  return (
+  <nav className="menu-primary">
+    <ul className="nav-menu">
+      <li><a href="">Home</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="">Our Works</a></li>
+      <li><a href="">Clients</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </nav>
+  )
+}
+
 const Navbar = () => {
 
   return (
-<nav className="menu-primary">
-  <div className="logo-box">
-    <p className="logo">Edie</p>
+
+  <div className="navbar">
+    <div className="logo-box" role="banner">
+      <p className="logo-text">Edie</p>
+    </div>
+    <Menu />
   </div>
-  <div className="menu-wrap">
-    <ul className="nav-menu">
-      <div className="menu-item"><li><a href="">Home</a></li></div>
-      <div className="menu-item"><li><a href="">Services</a></li></div>
-      <div className="menu-item"><li><a href="">Our Works</a></li></div>
-      <div className="menu-item"><li><a href="">Clients</a></li></div>
-      <div className="menu-item"><li><a href="">Contact</a></li></div>
-    </ul>
-  </div>
-</nav>
+
   )
 }
 

@@ -1,3 +1,67 @@
-img {
+header {
+  padding-top: 2rem;
+}
+
+.hero {
   max-width: 100%;
+  border-radius: var(--rounded-md);
+}
+
+.title-box {
+  margin-left: 7rem;
+  max-width: 540px;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: var(--txt-xs);
+  color: var(--primary-color);
+}
+
+.intro-box {
+  margin-left: 10rem;
+  max-width: 350px;
+}
+
+form {
+  padding-top: 2rem;
+}
+
+button.join {
+  width: 94px;
+  height: 49px;
+  font-size: var(--txt-xs);
+  background-color: var(--primary-color);
+  color: #f2f2f2;
+}
+
+input {
+  width: 250px;
+  height: 57px;
+  background-color: #f2f2f2;
+  border: transparent;
+  border-radius: var(--rounded-xs);
+}
+
+::placeholder {
+  color: #BDBDBD;
+}
+
+::placeholder, input {
+  font-family: var(--font);
+  font-weight: 500;
+  font-size: var(--txt-xs);
+  padding-left: 20px;
+}
+
+.form-box {
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  border-radius: var(--rounded-xs);
+}
+
+.form-text {
+  font-size: var(--txt-xxxs);
+  color: var(--grey-3);
 }

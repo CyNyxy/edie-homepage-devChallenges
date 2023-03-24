@@ -1,0 +1,42 @@
+h2 {
+  max-width: 450px;
+}
+
+.grid-design {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.design-item:nth-child(odd) {
+  padding-top: 6rem;
+}
+
+.design-item:nth-child(even) {
+  justify-self: end;
+}
+
+img.design-item {
+  width: 545px;
+  max-width: 100%;
+  border-radius: var(--rounded-lg);
+}
+
+.design-title {
+  color: var(--grey-1);
+  font-size: var(--txt-sm);
+  font-weight: 700;
+}
+
+.design-subtitle {
+    color: var(--grey-3);
+    font-size: var(--txt-xxxs);
+    font-weight: 300;
+}
+
+.design-title {
+  font-size: var(--txt-sm);
+  font-weight: 500;
+  color: var(--grey-1);
+}
