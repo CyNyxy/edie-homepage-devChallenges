@@ -10,16 +10,20 @@ h2 {
 }
 
 .design-item:nth-child(odd) {
-  padding-top: 6rem;
+  margin-top: 8rem;
 }
 
 .design-item:nth-child(even) {
-  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-img.design-item {
+
+img.design-img {
   width: 545px;
   max-width: 100%;
+  height: auto;
   border-radius: var(--rounded-lg);
 }
 
@@ -39,4 +43,16 @@ img.design-item {
   font-size: var(--txt-sm);
   font-weight: 500;
   color: var(--grey-1);
+}
+
+.link-design {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-self: flex-end;
+  justify-content: flex-end;
+}
+
+a.seemore {
+  color: var(--primary-color);
 }

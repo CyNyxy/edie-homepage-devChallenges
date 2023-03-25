@@ -18,7 +18,6 @@ const Menu = () => {
 const Navbar = () => {
 
   return (
-
   <div className="navbar">
     <div className="logo-box" role="banner">
       <p className="logo-text">Edie</p>
@@ -29,4 +28,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export { Menu, Navbar }
