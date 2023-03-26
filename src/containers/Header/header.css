@@ -117,4 +117,8 @@ input {
   header h1 {
     margin-block: 2rem;
   }
+  .intro-box > h1 {
+    max-width: 100%;
+  }
+  
 }

@@ -1,5 +1,8 @@
 import '../Footer/footer.css'
 import { Menu } from "../Navbar/Navbar"
+import instagram from  '../../assets/instagram.svg'
+import linkedin from  '../../assets/linkedin.svg'
+import twitter from  '../../assets/twitter.svg'
 
 const Footer = () => {
 
@@ -11,9 +14,9 @@ const Footer = () => {
       </div>
       <div className="social">
         <p className="logo-bot">Edie</p>
-        <img src="./src/assets/instagram.svg" alt="instagram" />
-        <img src="./src/assets/linkedin.svg" alt="linkedin" />
-        <img src="./src/assets/twitter.svg" alt="twitter" />
+        <img src={instagram} alt="instagram" />
+        <img src={linkedin} alt="linkedin" />
+        <img src={twitter} alt="twitter" />
       </div>
       <div className="footer-form">
         <form action="submit">

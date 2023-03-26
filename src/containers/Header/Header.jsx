@@ -1,4 +1,5 @@
 import '../Header/header.css'
+import heroban from  '../../assets/hero.jpg'
 
 const Header = () => {
 
@@ -9,7 +10,7 @@ const Header = () => {
         <h1>We create beautiful and fast web services</h1>
       </div>
       <div className="banner">
-        <img src="./src/assets/hero.jpg" className="hero" alt="banner" />
+        <img src={heroban} className="hero" alt="banner" />
       </div>
       <div className="intro-box">
         <h1>Story, emotion and purpose</h1>
