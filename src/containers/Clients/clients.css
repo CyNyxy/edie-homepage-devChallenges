@@ -1,5 +1,14 @@
-h2, p.team-text {
+.h2-clients, p.team-text {
   max-width: 280px;
+}
+
+p.team-text {
+  color: var(--grey-2);
+  margin-top: 1rem;
+}
+
+.h2-clients {
+  font-size: 2.25rem;
 }
 
 p.team-title {
@@ -10,7 +19,10 @@ p.team-title {
 
 .team {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  padding-block: 4rem;
+  gap: 2rem;
 }
 
 .team-box {
@@ -22,8 +34,10 @@ p.team-title {
 
 .team-img {
   display: flex;
-  gap: 1.25rem;
-  padding-left: 2rem;
+  gap: .5rem;
+  padding-left: 0;
+  flex: 1;
+
 }
 
 .team-img > div:nth-child(1) {
@@ -32,7 +46,7 @@ p.team-title {
 }
 
 .team-img img:nth-child(2) {
-  margin-top: 1rem;
+  margin-top: 0;
 }
 
 .team-img > div {
@@ -47,23 +61,23 @@ p.team-title {
 }
 
 img[alt=team1] {
-  max-width: 320px;
-
+  max-width: 178px;
 }
 
 img[alt=team2] {
-  max-width: 260px;
-
+  max-width: 145px;
 }
 
 img[alt=team3] {
-  max-width: 290px;
+  max-width: 165px;
 }
 
 .quote {
   font-size: var(--txt-md);
   font-weight: 500;
   max-width: 940px;
+  line-height: var(--space-lg-mobile);
+  margin-block: 3rem;
 }
 
 .avatar {
@@ -73,4 +87,50 @@ img[alt=team3] {
 
 .profile {
   display: flex;
+  gap: 1.5rem;
+}
+
+.profile > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p.client-title {
+  font-size: var(--txt-sm);
+  font-weight: 500;
+  padding-bottom: .5rem;
+}
+
+p.client-subtitle {
+  font-size: var(--txt-xs);
+  color: var(--grey-3);
+}
+
+@media screen and (min-width: 800px) {
+  .team {
+    flex-direction: row;
+    gap: 0;
+  }
+  .team-img {
+    gap: 1.25rem;
+    padding-left: 2rem;
+  }
+  .team-img img:nth-child(2) {
+    margin-top: 1rem;
+  }
+  img[alt=team1] {
+    max-width: 320px;
+  }
+  
+  img[alt=team2] {
+    max-width: 260px;
+  }
+  
+  img[alt=team3] {
+    max-width: 290px;
+  }
+  .quote {
+    line-height: var(--space-lg2);
+  }
 }

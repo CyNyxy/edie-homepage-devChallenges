@@ -4,7 +4,7 @@ const Works = () => {
   
   return (
     <section>
-      <h2>Good design means good business</h2>
+      <h2 className="h2-works">Good design means good business</h2>
       <div className="grid-design">
         <div className="design-item">
           <img src="./src/assets/smarthome.jpg" className="design-img" alt="smarthome" />
@@ -26,7 +26,7 @@ const Works = () => {
           <p className="design-subtitle">Frontend application</p>
           <p className="design-title">Juice product homepage</p>
           <div className="link-design">
-          <a href="#" className="seemore">See more &rarr;</a>
+            <a href="#" className="seemore">see more &nbsp;&rarr;</a>
           </div>
         </div>
       </div>

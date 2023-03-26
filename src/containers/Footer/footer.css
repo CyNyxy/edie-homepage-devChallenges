@@ -1,16 +1,95 @@
 footer {
+  display: flex;
+  flex-direction: column;
   background-color: #100E1D;
-  height: 385px;
-  padding-top: 2rem;
+  padding-block: 4rem;
+  color: #fff;
+  justify-content: space-around;
+  margin-top: 6rem;
+  gap: 2rem;
+}
+
+footer > div {
+  flex: 1;
+}
+
+.nav-box {
+  margin-bottom: 2rem;
 }
 
 .nav-box > .menu-primary > .nav-menu {
   display: flex;
   flex-direction: column;
+  gap: 1.25rem;
+}
+
+.nav-box > .menu-primary {
+  padding: 0;
+  justify-content: flex-start;
 }
 
 .nav-box a {
   color: #fff;
   font-size: var(--txt-xs);
   font-weight: 400;
+}
+
+.logo-bot {
+  color: #f2f2f2;
+  font-size: var(--txt-md);
+  font-weight: 700;
+}
+
+.social {
+  padding-left: 2rem;
+}
+
+.social p {
+  margin-bottom: 1rem;
+}
+
+.social > img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.footer-form {
+  margin-right: 1rem;
+  padding-left: 2rem;
+}
+
+.footer-text {
+  font-size: var(--txt-xxxs);
+  color: var(--grey-3);
+  padding-bottom: .3rem;
+}
+
+.footer-info {
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 0.875rem;
+}
+
+.footer-info a {
+  color: #f2f2f2;
+}
+
+.sign {
+  background-color: #100E1D;
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+  footer {
+    flex-direction: row;
+    gap: 0;
+  }
+  .nav-box > .menu-primary {
+    justify-content: flex-end;
+  }
+  .footer-form {
+    margin-right: 1rem;
+    padding-left: 0;
+  }
 }

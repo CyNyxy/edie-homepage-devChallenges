@@ -13,7 +13,7 @@ const Header = () => {
       </div>
       <div className="intro-box">
         <h1>Story, emotion and purpose</h1>
-        <p className="intro-text">We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
+        <p>We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
         <div className="contact-box">
           <form action="submit">
             <p className="form-text">Want us to contact you?</p>

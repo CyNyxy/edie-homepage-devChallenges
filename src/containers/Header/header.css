@@ -2,42 +2,56 @@ header {
   padding-top: 2rem;
 }
 
-.hero {
+img.hero {
   max-width: 100%;
   border-radius: var(--rounded-md);
 }
 
 .title-box {
-  margin-left: 7rem;
-  max-width: 540px;
+  margin-left: 0;
+  margin-left: 1rem;
+  max-width: 270px;
+}
+
+header h1 {
+  margin-block: 1rem;
 }
 
 .subtitle {
   font-weight: 500;
-  font-size: var(--txt-xs);
+  font-size: var(--txt-mobile-xs);
   color: var(--primary-color);
 }
 
 .intro-box {
-  margin-left: 10rem;
-  max-width: 350px;
+  margin-left: 2rem;
+  max-width: 275px;
+}
+
+.intro-box > h1 {
+  max-width: 225px;
+}
+
+.intro-box > p {
+  line-height: var(--space-xs);
+  font-size: var(--txt-mobile-xs);
 }
 
 form {
-  padding-top: 2rem;
+  padding-block: 3rem;
 }
 
 button.join {
-  width: 94px;
-  height: 49px;
-  font-size: var(--txt-xs);
+  width: 71px;
+  height: 39px;
+  font-size: 0.875rem;
   background-color: var(--primary-color);
   color: #f2f2f2;
 }
 
 input {
-  width: 250px;
-  height: 57px;
+  width: 290px;
+  height: 47px;
   background-color: #f2f2f2;
   border: transparent;
   border-radius: var(--rounded-xs);
@@ -50,18 +64,57 @@ input {
 ::placeholder, input {
   font-family: var(--font);
   font-weight: 500;
-  font-size: var(--txt-xs);
-  padding-left: 20px;
+  font-size: var(--txt-xxs);
+  padding-left: 10px;
 }
 
 .form-box {
   background-color: #f2f2f2;
   display: flex;
   align-items: center;
+  padding-right: 4px;
   border-radius: var(--rounded-xs);
+  max-width: 290px;
 }
 
 .form-text {
   font-size: var(--txt-xxxs);
   color: var(--grey-3);
+  padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .title-box {
+    max-width: 540px;
+    margin-left: 7rem;
+  }
+  .subtitle {
+    font-size: var(--txt-xs);
+  }
+  .intro-box {
+    margin-left: 10rem;
+    max-width: 370px;
+  }
+  .intro-box > p {
+    font-size: var(--txt-xs);
+    line-height: var(--space-md);
+  }
+  ::placeholder, input {
+    font-size: var(--txt-xs);
+  }
+  button.join {
+    width: 94px;
+    height: 49px;
+    font-size: var(--txt-xs);
+  }
+  input {
+    width: 250px;
+    height: 57px;
+  }
+  .form-box {
+    max-width: 350px;
+  }
+  header h1 {
+    margin-block: 2rem;
+  }
 }
