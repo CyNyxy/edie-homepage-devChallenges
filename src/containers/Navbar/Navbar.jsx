@@ -27,9 +27,9 @@ const Navbar = () => {
     <div className="navbar-container"><Menu /></div>
     <div className="navbar-menu">
         {toggleMenu ? (
-          <span class="material-icons-outlined menu-icon" onClick={() => setToggleMenu(false)}>close</span>
+          <span className="material-icons-outlined menu-icon" onClick={() => setToggleMenu(false)}>close</span>
         ) : (
-          <span class="material-icons-outlined menu-icon" onClick={() => setToggleMenu(true)}>menu</span>
+          <span className="material-icons-outlined menu-icon" onClick={() => setToggleMenu(true)}>menu</span>
         )}
         {toggleMenu && (
           <div className="navbar-menu_container">

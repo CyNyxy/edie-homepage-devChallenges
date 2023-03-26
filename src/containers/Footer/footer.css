@@ -92,4 +92,7 @@ footer > div {
     margin-right: 1rem;
     padding-left: 0;
   }
+  .footer-form form {
+    padding-block: 0;
+  }
 }

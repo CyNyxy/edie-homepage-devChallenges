@@ -10,7 +10,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://devchallenges.io/solutions/rBoptpUDQUdt86OXtHbL">
       Solution
     </a>
     <span> | </span>
@@ -41,6 +41,8 @@ The solution for this challenge can be found: https://nyxy-edie-homepage.netlify
 - [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev)
 - [CSS](https://css-tricks.com)
+
+I used Vite for this React project for the first time. I built the menu using conditional rendering with ternary operators and hooks. I also used custom properties for sizes and colors to improve responsiveness.
 
 
 ## Features
